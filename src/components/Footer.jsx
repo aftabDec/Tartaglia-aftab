@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#0b0603] to-[#000000] text-white py-10">
+    <footer className="bg-zinc-950 text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
@@ -17,9 +17,9 @@ const Footer = () => {
               About Me
             </h3>
             <p className="text-gray-400 text-lg">
-              I'm a professional video editor with a passion for crafting unique
-              stories through visuals. Let's work together to make your content
-              shine!
+              Hi, I’m Aftab Ansari. I love editing videos and telling stories
+              through them. Making things look good and stand out is what I
+              enjoy the most.
             </p>
           </div>
 
