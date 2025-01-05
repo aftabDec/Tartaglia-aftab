@@ -16,7 +16,7 @@ const YouTubeSection = () => {
     {
       url: "https://youtu.be/bEqQy2Ojyuo?si=IskDCezMI-omeAwn",
       title: "iDaeDream",
-      desc: "",
+      desc: "1.1k Views",
     },
   ];
 
