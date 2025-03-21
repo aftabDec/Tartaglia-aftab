@@ -4,14 +4,14 @@ import ReactPlayer from "react-player";
 const YouTubeSection = () => {
   const videos = [
     {
-      url: "https://youtu.be/W0f4g2VInL4?si=C1hDBkx4OJ3kPXt-",
-      title: "Caboose Yt",
-      desc: "8.5k Views",
+      url: "https://youtu.be/ON775U-L5OU?si=Uicovo5sudfAWeqq",
+      title: "AYHAN",
+      desc: "422 Views",
     },
     {
-      url: "https://youtu.be/Vg3m__GGhhk?si=YBixXayrfvpaZbal",
-      title: "Caboose Yt",
-      desc: "10k Views",
+      url: "https://youtu.be/Zwbe758c3zo?si=lXYjgz61KMKJZYfh",
+      title: "iDaeDream",
+      desc: "910 Views",
     },
     {
       url: "https://youtu.be/bEqQy2Ojyuo?si=IskDCezMI-omeAwn",
