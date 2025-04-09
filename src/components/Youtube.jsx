@@ -9,9 +9,9 @@ const YouTubeSection = () => {
       desc: "422 Views",
     },
     {
-      url: "https://youtu.be/Zwbe758c3zo?si=lXYjgz61KMKJZYfh",
+      url: "https://youtu.be/Ky4Mh8uAUpY?si=UQZ7MyqsncGC9kuw",
       title: "iDaeDream",
-      desc: "910 Views",
+      desc: "2.3k Views",
     },
     {
       url: "https://youtu.be/bEqQy2Ojyuo?si=IskDCezMI-omeAwn",
