@@ -25,49 +25,125 @@ const YouTubeSection = () => {
     },
   ];
 
-  return (
-    <div className="py-10 px-4 bg-zinc-950">
-      <h2 className="text-4xl font-bold mb-10 text-white text-center">
-        Featured Videos
-      </h2>
 
-      <div className="space-y-10">
-        {videos.map((video, index) => (
-          <div
-            key={index}
-            className="grid grid-cols-1 md:grid-cols-2 items-center gap-6"
-          >
-            {/** Alternating Layout Logic */}
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900/20 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
+            Featured Videos
+          </span>
+          <div className="mt-2 h-1 w-24 mx-auto bg-gradient-to-r from-blue-500 to-transparent" />
+        </h2>
+
+        <div className="space-y-20 lg:space-y-28">
+          {videos.map((video, index) => (
             <div
-              className={`order-1 ${index % 2 !== 0 ? "md:order-2" : ""} px-4`}
+              key={index}
+              className="group relative overflow-hidden rounded-3xl border border-gray-800/50 bg-gradient-to-br from-black/80 via-gray-900/50 to-blue-900/20 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10"
             >
-              <div
-                className="relative w-full h-0 overflow-hidden rounded-lg shadow-lg"
-                style={{ paddingBottom: "56.25%" }} // 16:9 Aspect Ratio
-              >
-                <ReactPlayer
-                  url={video.url}
-                  controls
-                  width="100%"
-                  height="100%"
-                  className="absolute top-0 left-0"
-                />
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 md:p-10">
+                {/* Video Player */}
+                <div
+                  className={`relative overflow-hidden rounded-2xl shadow-2xl ${
+                    index % 2 === 0 ? "lg:order-1" : "lg:order-2"
+                  }`}
+                >
+                  <div
+                    className="relative w-full h-0 pb-[56.25%] transition-transform duration-500 group-hover:scale-[1.02]"
+                  >
+                    <ReactPlayer
+                      url={video.url}
+                      controls
+                      width="100%"
+                      height="100%"
+                      className="absolute top-0 left-0"
+                      light={true}
+                      playIcon={
+                        <div className="w-16 h-16 bg-blue-500/90 rounded-full flex items-center justify-center hover:bg-blue-400 transition-all">
+                          <svg
+                            className="w-8 h-8 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                            />
+                          </svg>
+                        </div>
+                      }
+                    />
+                  </div>
+                </div>
+
+                {/* Video Info */}
+                <div
+                  className={`flex flex-col justify-center ${
+                    index % 2 === 0 ? "lg:order-2" : "lg:order-1"
+                  } p-4 md:p-6`}
+                >
+                  <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+                    {video.title}
+                  </h3>
+                  <div className="flex items-center space-x-3 mb-6">
+                    <span className="flex items-center text-blue-300/80">
+                      <svg
+                        className="w-5 h-5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        />
+                      </svg>
+                      {video.desc}
+                    </span>
+                  </div>
+                  <a
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center w-fit px-6 py-3 border border-blue-500/30 rounded-full bg-blue-500/10 hover:bg-blue-500/20 transition-all group"
+                  >
+                    <span className="text-blue-300 group-hover:text-white">
+                      Watch Full Video
+                    </span>
+                    <svg
+                      className="ml-2 w-4 h-4 text-blue-300 group-hover:text-white group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-            <div
-              className={`order-2 ${
-                index % 2 !== 0 ? "md:order-1" : ""
-              } px-4 text-center`} // Ensure text is always centered
-            >
-              <h3 className="text-2xl font-bold text-white uppercase">
-                {video.title}
-              </h3>
-              <p className="text-lg text-gray-300 mt-2">
-                {video.desc || "No description available."}
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
