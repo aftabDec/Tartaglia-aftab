@@ -18,6 +18,11 @@ const YouTubeSection = () => {
       title: "iDaeDream",
       desc: "1.1k Views",
     },
+    {
+      url: "https://youtu.be/p8BA2KMEq2A?si=4gFeB7Z3OOk-xI_p",
+      title: "CriticalByte",
+      desc: "2.5k Views",
+    },
   ];
 
   return (
