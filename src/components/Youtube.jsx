@@ -4,9 +4,9 @@ import ReactPlayer from "react-player";
 const YouTubeSection = () => {
   const videos = [
     {
-      url: "https://youtu.be/ON775U-L5OU?si=Uicovo5sudfAWeqq",
-      title: "AYHAN",
-      desc: "422 Views",
+      url: "https://youtu.be/p8BA2KMEq2A?si=4gFeB7Z3OOk-xI_p",
+      title: "CriticalByte",
+      desc: "2.5k Views",
     },
     {
       url: "https://youtu.be/Ky4Mh8uAUpY?si=UQZ7MyqsncGC9kuw",
@@ -14,15 +14,16 @@ const YouTubeSection = () => {
       desc: "2.3k Views",
     },
     {
+      url: "https://youtu.be/ON775U-L5OU?si=Uicovo5sudfAWeqq",
+      title: "AYHAN",
+      desc: "422 Views",
+    },
+    {
       url: "https://youtu.be/bEqQy2Ojyuo?si=IskDCezMI-omeAwn",
       title: "iDaeDream",
       desc: "1.1k Views",
     },
-    {
-      url: "https://youtu.be/p8BA2KMEq2A?si=4gFeB7Z3OOk-xI_p",
-      title: "CriticalByte",
-      desc: "2.5k Views",
-    },
+
   ];
 
 
