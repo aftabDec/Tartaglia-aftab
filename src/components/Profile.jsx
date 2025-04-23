@@ -26,7 +26,7 @@ const Profile = () => {
           <p className="text-blue-200/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Video Editor | Developer
             <span className="block text-blue-300/70 text-sm md:text-base mt-2">
-            Turning ideas into screen-ready storie
+            Turning ideas into screen-ready stories
             </span>
           </p>
         </div>
