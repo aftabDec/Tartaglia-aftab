@@ -6,7 +6,7 @@ const YouTubeSection = () => {
     {
       url: "https://youtu.be/p8BA2KMEq2A?si=4gFeB7Z3OOk-xI_p",
       title: "CriticalByte",
-      desc: "4k Views",
+      desc: "6k Views",
     },
     {
       url: "https://youtu.be/Ky4Mh8uAUpY?si=UQZ7MyqsncGC9kuw",
