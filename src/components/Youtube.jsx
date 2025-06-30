@@ -7,21 +7,22 @@ const YouTubeSection = () => {
       url: "https://youtu.be/p8BA2KMEq2A?si=4gFeB7Z3OOk-xI_p",
       title: "CriticalByte",
       desc: "10k Views",
+    },  
+    {
+      url: "https://youtu.be/DpC_9rQiF7s?si=o8cFeIw2RqA2emQ6",
+      title: "The Nut",
+      desc: "1.1k Views",
     },
     {
       url: "https://youtu.be/Ky4Mh8uAUpY?si=UQZ7MyqsncGC9kuw",
       title: "iDaeDream",
       desc: "2.3k Views",
     },
+  
     {
-      url: "https://youtu.be/ON775U-L5OU?si=Uicovo5sudfAWeqq",
-      title: "AYHAN",
-      desc: "422 Views",
-    },
-    {
-      url: "https://youtu.be/bEqQy2Ojyuo?si=IskDCezMI-omeAwn",
-      title: "iDaeDream",
-      desc: "1.1k Views",
+      url: "https://youtu.be/9z35UoNDk4c?si=-U2t3xcZ9lT9pD9M",
+      title: "Sam Hawkins",
+      desc: "705 Views",
     },
 
   ];
