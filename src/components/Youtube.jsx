@@ -9,20 +9,20 @@ const YouTubeSection = () => {
       desc: "10k Views",
     },  
     {
-      url: "https://youtu.be/DpC_9rQiF7s?si=o8cFeIw2RqA2emQ6",
-      title: "The Nut",
-      desc: "1.1k Views",
+      url: "https://youtu.be/RhwxvivuxLQ?si=k8Bxd8qSsFhX85-X",
+      title: "Sam Hawkins",
+      desc: "3k Views",
     },
     {
-      url: "https://youtu.be/Ky4Mh8uAUpY?si=UQZ7MyqsncGC9kuw",
-      title: "iDaeDream",
-      desc: "2.3k Views",
+      url: "https://youtu.be/4kLcTyNTxI8?si=UHBaU-E89c-AXIBQ",
+      title: "Sam Hawkins",
+      desc: "2k Views",
     },
   
     {
-      url: "https://youtu.be/9z35UoNDk4c?si=-U2t3xcZ9lT9pD9M",
+      url: "https://youtu.be/AkpN29Nlxr0?si=FEJ5JZriYCTEoj6p",
       title: "Sam Hawkins",
-      desc: "705 Views",
+      desc: "866 Views",
     },
 
   ];
